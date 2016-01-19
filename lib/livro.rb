@@ -1,7 +1,8 @@
 class Livro
 
-  attr_writer :preco
-  attr_reader :preco
+  attr_accessor :preco # funciona como o attr_writer e o attr_reader juntos
+  #attr_writer :preco
+  #attr_reader :preco
 
 	def initialize(autor, isbn = "1", numero_de_paginas, preco)
 	  #puts "Autor: #{autor}, ISBN: #{isbn}, Pág: #{numero_de_paginas}"
