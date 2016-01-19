@@ -5,4 +5,8 @@ class Livro
           @isbn = isbn
           @numero_paginas = numero_de_paginas      
 	end
+
+        def to_s
+          "Autor: #{@autor}, ISBN: #{@isbn}, Páginas: #{@numero_de_paginas}"
+        end
 end
