@@ -3,7 +3,8 @@ class Livro
 	  #puts "Autor: #{autor}, ISBN: #{isbn}, Pág: #{numero_de_paginas}"
           @autor = autor
           @isbn = isbn
-          @numero_paginas = numero_de_paginas      
+          @numero_paginas = numero_de_paginas
+          @preco = preco      
 	end
 
         def to_s
