@@ -1,5 +1,5 @@
 class Livro
-	def initialize(autor, isbn = "1", numero_de_paginas)
+	def initialize(autor, isbn = "1", numero_de_paginas, preco)
 	  #puts "Autor: #{autor}, ISBN: #{isbn}, Pág: #{numero_de_paginas}"
           @autor = autor
           @isbn = isbn
@@ -9,5 +9,9 @@ class Livro
 
         def to_s
           "Autor: #{@autor}, ISBN: #{@isbn}, Páginas: #{@numero_de_paginas}"
+        end
+
+        def preco
+          @preco
         end
 end
