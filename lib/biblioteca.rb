@@ -15,4 +15,9 @@ class Biblioteca
   def livros
     @livros.values.flatten
   end
+
+  def livros_por_categoria(categoria)
+    @livros[categoria]
+  end
+end
 end
