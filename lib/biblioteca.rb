@@ -17,7 +17,9 @@ class Biblioteca
   end
 
   def livros_por_categoria(categoria)
-    @livros[categoria]
+    @livros[categoria].each do |livro|
+      yield livro
+    end
   end
 end
-end
+
